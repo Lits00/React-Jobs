@@ -1,7 +1,8 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom"; // used NavLink for a dynamic links to change active tab's css
 import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
+  // responsible for setting specific css for the active link
   const linkClass = ({ isActive }) =>
     isActive
       ? "bg-black text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"

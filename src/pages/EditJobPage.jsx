@@ -16,8 +16,8 @@ const EditJobPage = ({ updateJobSubmit }) => {
   const [contactEmail, setContactEmail] = useState(job.company.contactEmail);
   const [contactPhone, setContactPhone] = useState(job.company.contactPhone);
 
-  const navigate = useNavigate();
-  const { id } = useParams();
+  const navigate = useNavigate(); // initialized useNavigate
+  const { id } = useParams(); // takes the id from the url params
 
   const submitForm = (e) => {
     e.preventDefault();
@@ -41,7 +41,7 @@ const EditJobPage = ({ updateJobSubmit }) => {
 
     toast.success("Job updated successfully!");
 
-    return navigate(`/jobs/${id}`);
+    return navigate(`/jobs/${id}`); // invoke navigate to automatically re-route the user
   };
 
   return (

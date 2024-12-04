@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; // used for re-routing
 import { toast } from "react-toastify";
 
 const AddJobPage = ({ addJobSubmit }) => {
@@ -13,7 +13,7 @@ const AddJobPage = ({ addJobSubmit }) => {
   const [contactEmail, setContactEmail] = useState("");
   const [contactPhone, setContactPhone] = useState("");
 
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // initialized useNavigate
 
   const submitForm = (e) => {
     e.preventDefault();

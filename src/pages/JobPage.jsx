@@ -1,7 +1,7 @@
 import { useParams, useLoaderData, useNavigate } from "react-router-dom";
 import { FaArrowLeft, FaMapMarker } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { toast } from "react-toastify";
+import { toast } from "react-toastify"; // used for notification
 
 const JobPage = ({ deleteJob }) => {
   const { id } = useParams();
